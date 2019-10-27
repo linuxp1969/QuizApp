@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <!-- domande e risposte -->
+    <string name="questionText1">Quel\'è il presidente dell\'America attuale?</string>
+    <string name="question1_1">George Washington</string>
+    <string name="question2_1">John Adams</string>
+    <string name="question3_1">Thomas Jefferson</string>
+    <string name="question4_1">Donald Trump</string>
+    <integer name="answer1">4</integer>
+
+    <string name="questionText2">Quanti colori ha la bandiera italiana?</string>
+    <string name="question1_2">uno</string>
+    <string name="question2_2">cinque</string>
+    <string name="question3_2">tre</string>
+    <string name="question4_2">venti</string>
+    <integer name="answer2">3</integer>
+
+    <string name="questionText3">Quante regioni ci sono in Italia?</string>
+    <string name="question1_3">dieci</string>
+    <string name="question2_3">venti</string>
+    <string name="question3_3">ventuno</string>
+    <string name="question4_3">diciannove</string>
+    <integer name="answer3">3</integer>
+</resources>
