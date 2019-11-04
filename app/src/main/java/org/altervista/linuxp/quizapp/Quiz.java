@@ -1,22 +1,24 @@
 package org.altervista.linuxp.quizapp;
 
+import android.util.Log;
+
 public class Quiz {
     private String domanda;
     private String risposta1;
     private String risposta2;
     private String risposta3;
     private String risposta4;
-
     private int rispostaesatta;
 
-    public Quiz(String domanda, String risposta1, String risposta2, String risposta3, String risposta4, int rispostaesatta) {
+    public Quiz(String domanda, String risposta1, String risposta2, String risposta3, String risposta4, int rispostaEsatta) {
         this.domanda = domanda;
         this.risposta1 = risposta1;
         this.risposta2 = risposta2;
         this.risposta3 = risposta3;
         this.risposta4 = risposta4;
-        if (rispostaesatta > 0 && rispostaesatta < 5) {
-            this.rispostaesatta = rispostaesatta;
+        Log.d("MAMMT0", String.valueOf(rispostaEsatta));
+        if (rispostaEsatta > 0 && rispostaEsatta < 5) {
+            this.rispostaesatta = rispostaEsatta;
         }else {
             System.out.println("Valore di rispostaesatta errato");
         }
@@ -48,6 +50,7 @@ public class Quiz {
 
     public int rispostaGiusta() {
         int ris = 0;
+        Log.d("MAMMT1", String.valueOf(rispostaesatta));
         switch (rispostaesatta) {
             case 1:
                 ris = 1;
@@ -62,6 +65,7 @@ public class Quiz {
                 ris = 4;
                 break;
         }
+        Log.d("MAMMT2", String.valueOf(ris));
         return ris;
     }
 
